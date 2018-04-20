@@ -5,17 +5,11 @@
         <link rel="shortcut icon" href="http://minotar.net/avatar/MobSlicer152.png">
     </head>
     <body>
-        <button onclick="calculator">Click to type equation</button>
+        <button onclick="calculator()">Click to type equation</button>
         <h1>Result: <script>
-        function myFunction() {
-            var txt;
-            var person = prompt("Enter equation below:", "e.g 1+1");
-            if (person == null || person == "") {
-                txt = "User cancelled the prompt.";
-            } else {
-                txt = "Hello " + person + "! How are you today?";
-            }
-            document.getElementById("demo").innerHTML = txt;
+        function calculator() {
+            var equation = prompt("Enter equation in the field below.","e.g 1+2")
+            document.write equation
         }
         </script>
         </h1>
