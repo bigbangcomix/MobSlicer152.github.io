@@ -7,10 +7,15 @@
     <body>
         <button onclick="calculator">Click to type equation</button>
         <h1>Result: <script>
-            var equation
-            function calculator() {
-                equation = prompt("Please enter an equation below.")
-                document.write(equation)
+        function myFunction() {
+            var txt;
+            var person = prompt("Enter equation below:", "e.g 1+1");
+            if (person == null || person == "") {
+                txt = "User cancelled the prompt.";
+            } else {
+                txt = "Hello " + person + "! How are you today?";
             }
+            document.getElementById("demo").innerHTML = txt;
+        }
         </script>
         </h1>
