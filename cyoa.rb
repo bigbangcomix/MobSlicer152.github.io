@@ -6,7 +6,7 @@ while choice == "start"
 	puts "You have chosen to start"
 	break if choice == "start"
 end
-sleep 2
+sleep 3
 puts "Chapter 1: The Story Begins"
 puts
 sleep 2
